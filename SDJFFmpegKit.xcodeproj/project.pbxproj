@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		01821198200B116B0011AF4F /* SDJFFmpegKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 01821196200B116B0011AF4F /* SDJFFmpegKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0199C23F200B12EF00D11888 /* SDJFFmepgOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0199C23D200B12EF00D11888 /* SDJFFmepgOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0199C240200B12EF00D11888 /* SDJFFmepgOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0199C23E200B12EF00D11888 /* SDJFFmepgOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01821193200B116B0011AF4F /* SDJFFmpegKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDJFFmpegKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01821196200B116B0011AF4F /* SDJFFmpegKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDJFFmpegKit.h; sourceTree = "<group>"; };
 		01821197200B116B0011AF4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0199C23D200B12EF00D11888 /* SDJFFmepgOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDJFFmepgOperation.h; sourceTree = "<group>"; };
+		0199C23E200B12EF00D11888 /* SDJFFmepgOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDJFFmepgOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				01821196200B116B0011AF4F /* SDJFFmpegKit.h */,
 				01821197200B116B0011AF4F /* Info.plist */,
+				0199C23D200B12EF00D11888 /* SDJFFmepgOperation.h */,
+				0199C23E200B12EF00D11888 /* SDJFFmepgOperation.m */,
 			);
 			path = SDJFFmpegKit;
 			sourceTree = "<group>";
@@ -60,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01821198200B116B0011AF4F /* SDJFFmpegKit.h in Headers */,
+				0199C23F200B12EF00D11888 /* SDJFFmepgOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0199C240200B12EF00D11888 /* SDJFFmepgOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
