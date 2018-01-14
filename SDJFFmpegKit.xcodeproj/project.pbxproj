@@ -10,6 +10,7 @@
 		01821198200B116B0011AF4F /* SDJFFmpegKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 01821196200B116B0011AF4F /* SDJFFmpegKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0199C23F200B12EF00D11888 /* SDJFFmepgOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0199C23D200B12EF00D11888 /* SDJFFmepgOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0199C240200B12EF00D11888 /* SDJFFmepgOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0199C23E200B12EF00D11888 /* SDJFFmepgOperation.m */; };
+		0199C242200B176D00D11888 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0199C241200B176D00D11888 /* ffmpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		01821197200B116B0011AF4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0199C23D200B12EF00D11888 /* SDJFFmepgOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDJFFmepgOperation.h; sourceTree = "<group>"; };
 		0199C23E200B12EF00D11888 /* SDJFFmepgOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDJFFmepgOperation.m; sourceTree = "<group>"; };
+		0199C241200B176D00D11888 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		01821195200B116B0011AF4F /* SDJFFmpegKit */ = {
 			isa = PBXGroup;
 			children = (
+				0199C241200B176D00D11888 /* ffmpeg */,
 				01821196200B116B0011AF4F /* SDJFFmpegKit.h */,
 				01821197200B116B0011AF4F /* Info.plist */,
 				0199C23D200B12EF00D11888 /* SDJFFmepgOperation.h */,
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0199C242200B176D00D11888 /* ffmpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
