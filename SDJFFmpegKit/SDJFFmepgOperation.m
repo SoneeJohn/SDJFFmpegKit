@@ -21,9 +21,9 @@
 
 @end
 
-NSString *const SDJFFmepgOperationGlobalOptionsKey = @"ALSYouTubeFFmpegWrapperOperationGlobalOptionsKey";
-NSString *const SDJFFmepgOperationInputFileOptionsKey = @"ALSYouTubeFFmpegWrapperOperationInputFileOptionsKey";
-NSString *const SDJFFmepgOperationOutputFileOptionsKey = @"ALSYouTubeFFmpegWrapperOperationOutputFileOptionsKey";
+NSString *const SDJFFmepgOperationGlobalOptionsKey = @"SDJFFmepgOperationGlobalOptionsKey";
+NSString *const SDJFFmepgOperationInputFileOptionsKey = @"SDJFFmepgOperationInputFileOptionsKey";
+NSString *const SDJFFmepgOperationOutputFileOptionsKey = @"SDJFFmepgOperationOutputFileOptionsKey";
 
 @implementation SDJFFmepgOperation
 
