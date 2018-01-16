@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SDJFFmepgOperation : NSOperation
 
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
-- (instancetype)initWithInputPaths:(NSArray<NSString *> *)inputhPaths outputPath:(NSString *)outputPath options:(NSDictionary<id, NSArray *> * __nullable)options NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithInputPaths:(NSArray<NSString *> *)inputPaths outputPath:(NSString *)outputPath options:(NSDictionary<id, NSArray *> * __nullable)options NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithInputPath:(NSString *)inputPath outputPath:(NSString *)outputPath;
 
 @property (strong, atomic, readonly) NSArray<NSString *> *inputPaths;
