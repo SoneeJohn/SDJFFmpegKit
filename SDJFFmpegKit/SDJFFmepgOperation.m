@@ -33,6 +33,9 @@ NSString *const SDJFFmepgOperationErrorDomain = @"SDJFFmepgOperationErrorDomain"
 
 - (instancetype)initWithInputPaths:(NSArray<NSString *> *)inputPaths outputPath:(NSString *)outputPath options:(NSDictionary<id, NSArray *> *)options {
     
+    NSParameterAssert(inputPaths);
+    NSParameterAssert(outputPath);
+    
     self = [super init];
     
     if (self) {
