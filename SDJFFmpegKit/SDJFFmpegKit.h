@@ -8,4 +8,5 @@
 
 #import <Foundation/Foundation.h>
 #import <SDJFFmpegKit/SDJFFmepgOperation.h>
+#import <SDJFFmpegKit/SDJFFmpegClient.h>
 
