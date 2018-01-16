@@ -15,6 +15,7 @@
 @property (strong, atomic) NSDictionary<id, NSArray *> *options;
 @property (strong, atomic) NSTask *task;
 @property (strong, atomic) NSMutableData *outputDataBacking;
+@property (strong, atomic) NSError *error;
 
 @property (assign, atomic) BOOL isFinished;
 @property (assign, atomic) BOOL isExecuting;
@@ -24,6 +25,7 @@
 NSString *const SDJFFmepgOperationGlobalOptionsKey = @"ALSYouTubeFFmpegWrapperOperationGlobalOptionsKey";
 NSString *const SDJFFmepgOperationInputFileOptionsKey = @"ALSYouTubeFFmpegWrapperOperationInputFileOptionsKey";
 NSString *const SDJFFmepgOperationOutputFileOptionsKey = @"ALSYouTubeFFmpegWrapperOperationOutputFileOptionsKey";
+NSString *const SDJFFmepgOperationErrorDomain = @"SDJFFmepgOperationErrorDomain";
 
 @implementation SDJFFmepgOperation
 
@@ -77,7 +79,13 @@ NSString *const SDJFFmepgOperationOutputFileOptionsKey = @"ALSYouTubeFFmpegWrapp
     self.task.terminationHandler = ^(NSTask * task){
         //Set readabilityHandler to nil or the reading will never stop
         [task.standardOutput fileHandleForReading].readabilityHandler = nil;
-        [weakSelf finish];
+        
+        if (task.terminationStatus == 0) {
+           [weakSelf finish];
+           return;
+        }
+        
+        [weakSelf finishWithError:[NSError errorWithDomain:SDJFFmepgOperationErrorDomain code:task.terminationStatus userInfo:@{NSLocalizedDescriptionKey: @"Operation failed"}]];
     };
     
     [self.task launch];
@@ -94,6 +102,12 @@ NSString *const SDJFFmepgOperationOutputFileOptionsKey = @"ALSYouTubeFFmpegWrapp
     
     self.isExecuting = NO;
     self.isFinished = YES;
+}
+
+- (void)finishWithError:(NSError *)error {
+    
+    self.error = error;
+    [self finish];
 }
 
 - (BOOL)isAsynchronous {

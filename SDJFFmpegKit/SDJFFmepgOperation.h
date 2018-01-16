@@ -20,10 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, atomic, readonly) NSString *outputPath;
 @property (nullable, strong, atomic, readonly) NSDictionary<id, NSArray *> *options;
 @property (nullable, strong, atomic, readonly) NSData *outputData;
+@property (nullable, strong, atomic, readonly) NSError *error;
 
 extern NSString *const SDJFFmepgOperationGlobalOptionsKey;
 extern NSString *const SDJFFmepgOperationInputFileOptionsKey;
 extern NSString *const SDJFFmepgOperationOutputFileOptionsKey;
+extern NSString *const SDJFFmepgOperationErrorDomain;
 
 @end
 
